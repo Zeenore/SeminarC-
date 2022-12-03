@@ -6,5 +6,5 @@ if (a % b == 0)
 {
     Console.WriteLine($"{a} и {b} кратно");  
 }
-else Console.WriteLine($"Не кратно остаток {a % b}");
+else Console.WriteLine($"Не кратно, остаток {a % b}");
 
