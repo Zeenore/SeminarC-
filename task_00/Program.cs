@@ -1,7 +1,14 @@
-﻿int a = Convert.ToInt32(Console.ReadLine());
-int b = Convert.ToInt32(Console.ReadLine());
-if (a == b * b)
+﻿Console.WriteLine("Введите трёхзначное число: ");
+int num;
+while (true)
 {
-    Console.WriteLine("ДА");
+    num = Convert.ToInt32(Console.ReadLine());
+    num = Math.Abs(-num);
+    if (num >= 100 && num < 1000)
+    {
+        break;
+    }
+    Console.WriteLine($"Число {num} не является трёхзначным, введите другое: ");
 }
-else Console.WriteLine("Нет");
+int num1 = num / 10 % 10;
+Console.WriteLine($"Вторая цифра Вашего числа: {num1}");
