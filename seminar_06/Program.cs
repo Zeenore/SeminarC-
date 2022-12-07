@@ -4,20 +4,16 @@ int num = Convert.ToInt32(Console.ReadLine());
 
 void Natural(int n)
 {
-    if (n > 0)
+    if (n != 0)
     {
         int i = 0;
-        while (n > 0)
+        while (n != 0)
         {
             n = n / 10;
             i++;
 
         }
         Console.WriteLine($"Кол-во цифр в числе {i}");
-    }
-    else
-    {
-        Console.WriteLine($"Ваше число отрицательное");
     }
 }
 Natural(num);
