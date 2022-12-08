@@ -30,7 +30,7 @@ void Print2(int[] ar)
 {
     for (int i = 0; i < ar.Length; i++)
     {
-        Console.WriteLine(ar[i]);
+        Console.Write("[" + ar[i] + "]");
     }
 }
 int[] array1 = ElementZamena(array);
