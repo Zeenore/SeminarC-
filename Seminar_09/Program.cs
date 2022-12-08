@@ -26,6 +26,13 @@ void Print(int[] arra)
         else Console.Write(arra[i] + "]");
     }
 }
+void Print2(int[] ar)
+{
+    for (int i = 0; i < ar.Length; i++)
+    {
+        Console.WriteLine(ar[i]);
+    }
+}
 int[] array1 = ElementZamena(array);
-Console.WriteLine(array);
+Print2(array);
 Print(array1);
