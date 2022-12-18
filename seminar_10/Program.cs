@@ -1,58 +1,47 @@
-﻿// Задача 34: Задайте массив заполненный случайными
-//  положительными трёхзначными числами. Напишите программу,
-//   которая покажет количество чётных чисел в массиве.
-// [345, 897, 568, 234] -> 2
-// Console.Clear();
-// Console.WriteLine("Ваша длинна массива ");
-// int sizeArr = int.Parse(Console.ReadLine());
+﻿
+[345, 897, 568, 234] -> 2
+Console.Clear();
+Console.WriteLine("Ваша длинна массива ");
+int sizeArr = int.Parse(Console.ReadLine());
 
-// int[] FillArray(int sizeArray)
-// {
-//     int[] ar = new int[sizeArray];
-//     Random rnd = new Random();
+int[] FillArray(int sizeArray)
+{
+    int[] ar = new int[sizeArray];
+    Random rnd = new Random();
 
-//     for (int i = 0; i < sizeArray; i++)
-//     {
-//         ar[i] = rnd.Next(100, 1000);
-//     }
-//     return ar;
-// }
+    for (int i = 0; i < sizeArray; i++)
+    {
+        ar[i] = rnd.Next(100, 1000);
+    }
+    return ar;
+}
 
 
-// int FindEvenNumbers(int[] array)
-// {
-//     int count = 0;
-//     for (int i = 0; i < array.Length; i++)
-//     {
-//         if (array[i] % 2 == 0);
-//         count++;
-//     }
-//     return count;
-// }
-// void PrintArray(int[] array)
-// {
-//     for (int i = 0; i < array.Length; i++)
-//     {
-//         if (i == 0) Console.Write("В массиве [");
-//         if (i < array.Length - 1) Console.Write(array[i] + ",");
-//         else Console.Write(array[i] + "]");
-//     }
-// }
+int FindEvenNumbers(int[] array)
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] % 2 == 0);
+        count++;
+    }
+    return count;
+}
+void PrintArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (i == 0) Console.Write("В массиве [");
+        if (i < array.Length - 1) Console.Write(array[i] + ",");
+        else Console.Write(array[i] + "]");
+    }
+}
 
-// int[] arra = FillArray(sizeArr);
-// PrintArray(arra);
-// int evenNumber = FindEvenNumbers(arra);
-// Console.WriteLine($" колличество чётных чисел = {evenNumber}");
+int[] arra = FillArray(sizeArr);
+PrintArray(arra);
+int evenNumber = FindEvenNumbers(arra);
+Console.WriteLine($" колличество чётных чисел = {evenNumber}");
 
-
-
-
-
-// Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
-
-// [3, 7, 23, 12] -> 19
-
-// [-4, -6, 89, 6] -> 0
 Console.Clear();
 
 Console.Write("Введите длинну массива: ");
